@@ -5,6 +5,7 @@ import { message, Upload } from "antd";
 import type { UploadProps } from "antd";
 import { parseSupabaseTablesWithAttributes } from "@/utils/tableParser"; // Adjust path as needed
 import DynamicForm from "@/components/dynamique-form";
+import TableView from "@/components/table-view";
 
 interface TableAttributes {
   tableName: string;
@@ -127,9 +128,15 @@ const Home = () => {
 
         {/* Display the form for the selected table */}
         {selectedTable && (
-          <div className="w-full max-w-lg">
-            <DynamicForm table={selectedTable} />
-          </div>
+          <>
+            <div className="w-full max-w-lg">
+              <DynamicForm table={selectedTable} />
+            </div>
+            <div>
+              <h1>Dynamic Table Viewer</h1>
+              <TableView tableName={selectedTable.tableName} />
+            </div>
+          </>
         )}
       </div>
     </div>
