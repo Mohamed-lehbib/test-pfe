@@ -1,0 +1,78 @@
+[
+  {
+    "tableName": "category",
+    "attributes": [
+      {
+        "name": "created_at",
+        "type": "string"
+      },
+      {
+        "name": "id",
+        "type": "number"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      }
+    ]
+  },
+  {
+    "tableName": "product",
+    "attributes": [
+      {
+        "name": "category_id",
+        "type": "number"
+      },
+      {
+        "name": "created_at",
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "name": "id",
+        "type": "number"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "price",
+        "type": "number"
+      },
+      {
+        "name": "quality",
+        "type": "\"Good\" | \"Really Good\" | \"Not Bad\"",
+        "enumValues": [
+          "Good",
+          "Really Good",
+          "Not Bad"
+        ]
+      }
+    ]
+  },
+  {
+    "tableName": "Test",
+    "attributes": [
+      {
+        "name": "Age",
+        "type": "number"
+      },
+      {
+        "name": "created_at",
+        "type": "string"
+      },
+      {
+        "name": "id",
+        "type": "number"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      }
+    ]
+  }
+]
