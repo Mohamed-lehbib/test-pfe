@@ -239,7 +239,7 @@ const Home = () => {
             handleFiles(file);
             return false;
           }}
-          className="bg-white border border-dashed border-gray-300 p-6 rounded-md cursor-pointer"
+          // className="bg-white border border-dashed border-gray-300 p-6 rounded-md cursor-pointer"
         >
           <p className="ant-upload-drag-icon mb-4">
             <InboxOutlined />
@@ -254,7 +254,9 @@ const Home = () => {
       <Button
         type="primary"
         onClick={handleSubmit}
-        className="w-full py-2 text-lg"
+        // className="w-full py-2 text-lg"
+        size="large"
+        className="w-full"
       >
         Continue
       </Button>
