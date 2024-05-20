@@ -9,7 +9,7 @@ import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
 // // utils/supabase.js
 export async function getSupabaseCredentials() {
-    const response = await fetch('http://localhost:3000/api/supabase-credentials');
+    const response = await fetch('https://test-pfe.vercel.app/api/supabase-credentials');
     if (!response.ok) {
       throw new Error('Failed to fetch Supabase credentials');
     }
