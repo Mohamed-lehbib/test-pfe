@@ -157,6 +157,7 @@
 // export default DynamicForm;
 
 // src/components/dynamic-form.tsx
+
 "use client";
 import { useState, useEffect } from "react";
 import { TableAttributes } from "@/utils/tableParser"; // Adjust the import path as needed
