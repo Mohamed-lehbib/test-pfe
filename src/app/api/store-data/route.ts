@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { NextResponse } from 'next/server';
 
+export const revalidate = 0;
 export async function POST(request: Request) {
   const { url, key, tables } = await request.json();
 

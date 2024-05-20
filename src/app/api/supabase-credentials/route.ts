@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import path from 'path';
 import fs from 'fs';
 
+export const revalidate =0;
 export async function GET(request: Request) {
   const dataDir = path.join(process.cwd(), 'src', 'data');
   const credentialsPath = path.join(dataDir, 'supabaseCredentials.json');

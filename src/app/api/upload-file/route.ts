@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import path from "path";
 import fs from "fs";
 
+export const revalidate =0;
 // Create a route handler for the POST request
 export async function POST(request: Request) {
   // Extract the content from the request body
